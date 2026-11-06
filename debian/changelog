@@ -1,3 +1,9 @@
+release-review-dtk-20261106-073925 (6.7.53-rc.1) unstable; urgency=medium
+
+  * Release 6.7.53-rc.1
+
+ -- Release Review <release-review@example.invalid>  Fri, 06 Nov 2026 15:53:28 +0800
+
 release-review-dtk-20261106-073925 (6.7.52) unstable; urgency=medium
 
   * Initial isolated release review fixture.
