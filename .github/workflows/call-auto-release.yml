@@ -1,0 +1,28 @@
+name: Auto Release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        type: string
+      name:
+        required: true
+        type: string
+      email:
+        required: true
+        type: string
+      timezone:
+        required: false
+        type: string
+        default: Asia/Shanghai
+permissions:
+  contents: read
+jobs:
+  release:
+    uses: peeweep-test/release-review-20261106-073925/.github/workflows/auto-release.yml@main
+    with:
+      version: ${{ inputs.version }}
+      name: ${{ inputs.name }}
+      email: ${{ inputs.email }}
+      timezone: ${{ inputs.timezone }}
+    secrets: inherit
